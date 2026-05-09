@@ -35,7 +35,7 @@ Handoff Coder resuelve esto con un protocolo claro: **detectar → razonar → p
 | Modelo | Base | Contexto | Uso ideal |
 |--------|------|----------|-----------|
 | `handoff-coder-32b` | Qwen2.5-Coder 32B | 128k tokens | Features, arquitectura, refactors complejos |
-| `handoff-coder-14b` | Qwen2.5-Coder 14B | 32k tokens | Debugging, cambios puntuales, consultas rápidas |
+| `handoff-coder-scout` | Llama 4 Scout | 128k tokens | Debugging, cambios puntuales, consultas rápidas |
 
 ---
 
@@ -52,7 +52,7 @@ cd handoff-coder
 ollama create handoff-coder-32b -f models/handoff-coder-32b/Modelfile
 
 # O el 14B (más liviano)
-ollama create handoff-coder-14b -f models/handoff-coder-14b/Modelfile
+ollama create handoff-coder-scout -f models/handoff-coder-scout/Modelfile
 
 # Úsalo
 ollama run handoff-coder-32b
